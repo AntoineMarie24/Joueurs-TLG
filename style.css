@@ -88,3 +88,12 @@ body {
   transform: rotateY(180deg);
   padding: 10px;
 }
+
+.back-text {
+  text-align: center;     
+  margin-top: 10px;         
+  display: flex;
+  flex-direction: column;  
+  gap: 5px;                 
+  font-size: 0.9rem;        
+}
