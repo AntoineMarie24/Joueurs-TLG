@@ -64,6 +64,14 @@ body {
   padding: 10px;
 }
 
+.player-info h2 {
+  font-size: 1rem;
+}
+
+.player-info p {
+  font-size: 0.8rem;
+}
+
 .club-logo {
   width: 40px;
   margin-bottom: 5px;
