@@ -1,0 +1,102 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #0b1d4a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  color: #fff;
+}
+
+header {
+  margin: 20px 0;
+}
+
+.site-logo {
+  width: 120px;
+  height: auto;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  width: 90%;
+  max-width: 1200px;
+}
+
+.card {
+  width: 180px;
+  height: 280px;
+  perspective: 1000px;
+}
+
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+.card-front, .card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-front {
+  background: #1a2a6c;
+  padding: 10px;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: center;
+}
+
+.club-logo {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+  margin-bottom: 5px;
+  z-index: 2;
+}
+
+.player-name {
+  font-weight: 700;
+  font-size: 0.9rem;
+  margin: 0;
+  z-index: 2;
+  color: #fff;
+}
+
+.player-age {
+  font-weight: 400;
+  font-size: 0.75rem;
+  margin-bottom: 5px;
+  z-index: 2;
+  color: #fff;
+}
+
+.card-back {
+  background: #16204c;
+  color: #fff;
+  transform: rotateY(180deg);
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 0.9rem;
+}
